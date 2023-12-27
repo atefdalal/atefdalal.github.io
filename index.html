@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Deconz</title>
+</head>
+<body>
+      <!-- Navigation Hamburger -->
+    <nav id="nav">
+        <span><img id="Croix" src="Croix.png"> Fermer</span>
+        <span><img id="Accueil" src="house.png"> Accueil</span>
+        <span><img id="Meteo" src="Meteo.png"> Météo</span>
+        <span><img id="Lumières" src="lightbulb.png"> Lumières</span>
+        <span><img id="Prises" src="plugin.png"> Prises</span>
+        <span><img id="Capteurs" src="door-sensor.png"> Capteurs</span>
+    </nav>
+
+    <nav id="pageMeteo">  <!-- celle de la meteo -->
+        <span>
+            <img id="retourArriere" src="retourArriere.png">
+            <img id="photoIllustrationVille" src="photoIllustrationVille.jpg">
+            <img id="photoIllustrationVille2" src="photoIllustrationVille2.jpg">
+            <p id="temperatureText">La température est de :</p>
+        </span>
+    </nav> 
+    
+    <nav id="pagePrises">
+        <img id="retourArriere2" src="retourArriere2.png">
+        <button id="on2" onclick="AllumerLumiere()">ON</button>
+        <button id="off" onclick="EteindreLumiere()">OFF</button>
+     </nav>
+
+
+    <nav id="pageCapteurs">
+        <img id="retourArriere3" src="retourArriere3.png">
+    </nav>
+
+    <nav id="pageLumières">
+        <img id="retourArriere4" src="retourArriere4.png">
+        <img id="lightbulb" src="lightbulb.png" alt="Lumiere">
+        <button id="on" onclick="AllumerLumiere()">ON</button>
+        <button id="off" onclick="EteindreLumiere()">OFF</button>
+    </nav>
+   <!---------------------------------------------------------------------------->
+
+    <header id="header">
+        <img id="imageHamburger" class="effetHamburger" src="hamburger.png">
+        <h1>Domotique DIY</h1>
+        <img id="imageDomoticz" src="phoscon-logo.png">
+    </header>
+    
+    <section id="section">
+        <h2>Application</h2>
+         <p>Ce site web permet d'afficher et de controler des modules Zigbee compatible <br> 
+            avec la clé de marque Phoscon. Un menu vous permettera de naviguer entre vos 
+            prises, vos lumières ou vos capteur présent dans votre maison.
+         </p>
+ 
+        <h2>Matériel</h2>
+        <ul id="listeMateriel">
+            <li>Raspberry Pi</li>
+            <li>Clé Zigbee</li>
+            <li>Prise zigbee</li>
+            <li>Capteur zigbee</li>
+            <li>Lumières zigbee</li>
+        </ul>  
+
+        <h2><a id="lienNavigation" href="#">Navigation</a></h2>
+      
+    </section>
+
+    <footer id="footer">
+        <nav>
+            <a href="#">Deconz API</a>|
+            <a href="#">ConBee 2</a>|
+            <a href="#">Deconz Application</a>
+            <p>Atef © 2023. Ce site est unique. Comme son créateur.</p>
+        </nav>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
